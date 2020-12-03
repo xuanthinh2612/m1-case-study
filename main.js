@@ -3,43 +3,48 @@ let ctx = c.getContext('2d');
 let background = new Image();
 let yourAirPlane = new Image();
 let ufo1 = new Image();
-let rocketSmall = new Image();
 let ufo2 = new Image();
+let fire = new Image();
 background.src = "./background.png";
 yourAirPlane.src = "./yourAirPlane.gif";
 ufo1.src = "./ufo.gif";
 ufo2.src = "./ufo1.gif";
-let khoangCachHaiUfo
-
-
-let demoPlane = new YourAirplane();
+fire.src = "./fire.gif"
+let khoangCachHaiUfo = 400;
+let ufoSpeed = 5;
 
 function runGame() {
     ctx.drawImage(background, 0, 0, 1900, 800);
-    ctx.drawImage(yourAirPlane, demoPlane.x, demoPlane.y, 300, 300);
-    demoPlane.y+=3;
+    ctx.drawImage(yourAirPlane, demoPlane.x, demoPlane.y, 200, 200);
+    demoPlane.y += demoPlane.dropDownSpeed;
     for (let i = 0; i < ufo.length; i++) {
         ctx.drawImage(ufo1, ufo[i].x, ufo[i].y, 200, 200);
-        ctx.drawImage(ufo2, ufo[i].x, ufo[i].y, 200, 200);
-        ufo[i].x -= 10;
+        ctx.drawImage(fire, ufo[i].x-15, ufo[i].y + khoangCachHaiUfo+80, 200, 200);
+        ctx.drawImage(ufo2, ufo[i].x, ufo[i].y + khoangCachHaiUfo, 200, 200);
+        ufo[i].x -= ufoSpeed;
         if (ufo[i].x === Math.floor(window.innerWidth / 2)) {
             ufo.push({
                 x: window.innerWidth - 200,
-                y: Math.floor(Math.random() * (window.innerHeight - 200))
+                y: Math.floor(Math.random() * (800 - ufo2.height - khoangCachHaiUfo))
             })
         }
         if (ufo[i].x < -150) {
             ufo.splice(i, 1)
         }
-        if(Math.floor(demoPlane.y)>window.innerHeight) {
-            demoPlane.y= - 50;
+        if (Math.floor(demoPlane.y) > window.innerHeight) {
+            demoPlane.y = -50;
+        }
+        if (demoPlane.checkLose(i) === false) {
+            // ctx.drawImage(gameOver,900,300,300,300);
+            alert('Game Over \n Your Score: ' + demoPlane.score);
+            demoPlane.score = 0;
+            demoPlane.showScore(demoPlane.score);
+        } else {
+            demoPlane.score += 1;
+            demoPlane.showScore(demoPlane.score);
         }
 
 
-        // if (Math.floor(demoPlane.x)===Math.floor(ufo[i].x)&&Math.floor(demoPlane.y)<Math.floor(ufo[i].y)
-        //     ||Math.floor(demoPlane.x)+1===Math.floor(ufo[i].x)&&Math.floor(demoPlane.y)<Math.floor(ufo[i].y)) {
-        //     alert('game over');
-        // }
     }
     requestAnimationFrame(runGame);
 }
@@ -53,7 +58,6 @@ window.addEventListener("keydown", function (evt) {
                 demoPlane.move();
         }
     }
-
 )
 
 // window.addEventListener("mousemove", function move(e) {

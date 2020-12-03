@@ -1,5 +1,12 @@
 let ufo = [];
+class Ufo {
+    constructor() {
+        this.x = window.innerWidth - 200;
+        this.y = 0;
+    }
+}
+let demoUfo = new Ufo();
 ufo[0] = {
-    x: window.innerWidth - 200,
-    y: 0 //Math.floor(Math.random() * (window.innerHeight - ufo.height))
+    x: demoUfo.x,
+    y: demoUfo.y
 }
