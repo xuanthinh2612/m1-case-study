@@ -1,17 +1,14 @@
 class YourAirplane {
     constructor() {
-        this.x = window.innerWidth / 6;
-        this.y = window.innerHeight / 2;
+        this.x = window.innerWidth / 5;
+        this.y = window.innerHeight / 3;
+        this.score = 0;
     }
-    fight (rocket) {
-        rocket[0] = {
-            x : this.x,
-            y : this.y
-        };
-         return console.log('ok')
+    move () {
+        this.y-=200;
     }
 
-    broken () {
-
-    }
+    // broken () {
+    //
+    // }
 }

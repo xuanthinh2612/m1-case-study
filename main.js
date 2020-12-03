@@ -5,22 +5,24 @@ let yourAirPlane = new Image();
 let ufo1 = new Image();
 let rocketSmall = new Image();
 let ufo2 = new Image();
-rocketSmall.src = './rockesmall.gif';
 background.src = "./background.png";
 yourAirPlane.src = "./yourAirPlane.gif";
 ufo1.src = "./ufo.gif";
 ufo2.src = "./ufo1.gif";
+let khoangCachHaiUfo
 
 
 let demoPlane = new YourAirplane();
 
 function runGame() {
     ctx.drawImage(background, 0, 0, 1900, 800);
-    ctx.drawImage(yourAirPlane, demoPlane.x, demoPlane.y, 200, 200);
-    for (let i = 0, j = 0; j < rocket.length, i < ufo.length; j++, i++) {
+    ctx.drawImage(yourAirPlane, demoPlane.x, demoPlane.y, 300, 300);
+    demoPlane.y+=3;
+    for (let i = 0; i < ufo.length; i++) {
         ctx.drawImage(ufo1, ufo[i].x, ufo[i].y, 200, 200);
-        ufo[i].x -= 2;
-        if (ufo[i].x === window.innerWidth / 2) {
+        ctx.drawImage(ufo2, ufo[i].x, ufo[i].y, 200, 200);
+        ufo[i].x -= 10;
+        if (ufo[i].x === Math.floor(window.innerWidth / 2)) {
             ufo.push({
                 x: window.innerWidth - 200,
                 y: Math.floor(Math.random() * (window.innerHeight - 200))
@@ -29,48 +31,49 @@ function runGame() {
         if (ufo[i].x < -150) {
             ufo.splice(i, 1)
         }
-        if (rocket.length>0) {
-            ctx.drawImage(rocketSmall, rocket[j].x, rocket[j].y, 100, 50);
-            rocket[j].x += 50;
-            console.log(ufo[i].x)
-            if (rocket[j].x > window.innerWidth) {
-                rocket.splice(j, 1);
-            }
-            // if (rocket[j].x === ufo[i].x) {
-            //     ufo.splice(i, 1);
-            //     rocket.splice(j, 1)
-            // }
+        if(Math.floor(demoPlane.y)>window.innerHeight) {
+            demoPlane.y= - 50;
         }
 
 
+        // if (Math.floor(demoPlane.x)===Math.floor(ufo[i].x)&&Math.floor(demoPlane.y)<Math.floor(ufo[i].y)
+        //     ||Math.floor(demoPlane.x)+1===Math.floor(ufo[i].x)&&Math.floor(demoPlane.y)<Math.floor(ufo[i].y)) {
+        //     alert('game over');
+        // }
     }
-
-
     requestAnimationFrame(runGame);
 }
 
 
 runGame();
 
-window.addEventListener("click", fight);
-window.addEventListener("mousemove", function move(e) {
-    if (demoPlane.x >= 0 && demoPlane.x <= 1900) {
-        demoPlane.x = e.x - 100;
-        demoPlane.y = e.y - 100;
+window.addEventListener("keydown", function (evt) {
+        switch (evt.keyCode) {
+            case 32 :
+                demoPlane.move();
+        }
     }
-    if (demoPlane.x < 0 || demoPlane.x > 1700) {
-        demoPlane.x = 0;
-        demoPlane.y = e.y - 100;
 
+)
 
-    }
-    if (demoPlane.y <= 0 && demoPlane.x >= 0) {
-        demoPlane.x = e.x - 100;
-        demoPlane.y = -20;
-
-    }
-    if (demoPlane.y > window.innerHeight - 200) {
-        demoPlane.x = e.x - 100;
-        demoPlane.y = window.innerHeight - 250;
-    }
-});
+// window.addEventListener("mousemove", function move(e) {
+//     if (demoPlane.x >= 0 && demoPlane.x <= 1900) {
+//         demoPlane.x = e.x - 100;
+//         demoPlane.y = e.y - 100;
+//     }
+//     if (demoPlane.x < 0 || demoPlane.x > 1700) {
+//         demoPlane.x = 0;
+//         demoPlane.y = e.y - 100;
+//
+//
+//     }
+//     if (demoPlane.y <= 0 && demoPlane.x >= 0) {
+//         demoPlane.x = e.x - 100;
+//         demoPlane.y = -20;
+//
+//     }
+//     if (demoPlane.y > window.innerHeight - 200) {
+//         demoPlane.x = e.x - 100;
+//         demoPlane.y = window.innerHeight - 250;
+//     }
+// });
