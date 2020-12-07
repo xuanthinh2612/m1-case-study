@@ -22,6 +22,14 @@
     <list default="true" id="17cafa44-c055-413d-96e9-285c8b13111e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airplane.js" beforeDir="false" afterPath="$PROJECT_DIR$/airplane.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/Game-over-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/giphy (1).gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/giphy.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/png-transparent-spacecraft-drawing-alien-others-spacecraft-cartoon-extraterrestrial-life.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/rocke1t.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/rocket.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/tenlua.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/yourAirplane.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ufo.js" beforeDir="false" afterPath="$PROJECT_DIR$/ufo.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ufoFightingGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/ufoFightingGame.html" afterDir="false" />
@@ -84,7 +92,12 @@
       <workItem from="1606954261140" duration="623000" />
       <workItem from="1606957243770" duration="8738000" />
       <workItem from="1606976721667" duration="13142000" />
-      <workItem from="1606999718245" duration="301000" />
+      <workItem from="1606999718245" duration="3851000" />
+      <workItem from="1607045445936" duration="7907000" />
+      <workItem from="1607058071277" duration="234000" />
+      <workItem from="1607149603291" duration="79000" />
+      <workItem from="1607149698269" duration="21000" />
+      <workItem from="1607302258654" duration="1171000" />
     </task>
     <servers />
   </component>
