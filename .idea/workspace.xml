@@ -22,17 +22,8 @@
     <list default="true" id="17cafa44-c055-413d-96e9-285c8b13111e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airplane.js" beforeDir="false" afterPath="$PROJECT_DIR$/airplane.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/Game-over-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/giphy (1).gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/giphy.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/png-transparent-spacecraft-drawing-alien-others-spacecraft-cartoon-extraterrestrial-life.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/rocke1t.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/rocket.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/tenlua.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/yourAirplane.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ufo.js" beforeDir="false" afterPath="$PROJECT_DIR$/ufo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ufoFightingGame.html" beforeDir="false" afterPath="$PROJECT_DIR$/ufoFightingGame.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +88,7 @@
       <workItem from="1607058071277" duration="234000" />
       <workItem from="1607149603291" duration="79000" />
       <workItem from="1607149698269" duration="21000" />
-      <workItem from="1607302258654" duration="1171000" />
+      <workItem from="1607302258654" duration="8397000" />
     </task>
     <servers />
   </component>
@@ -117,6 +108,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1607305319009">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="223" y="72" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1607305319009" />
     <state x="499" y="164" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1606962393077">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -125,9 +120,33 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1606890805531" />
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2" timestamp="1607305220760">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="150" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1607305220760" />
+    <state x="93" y="93" width="1350" height="644" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1607308129267">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="93" y="93" width="1350" height="644" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.834@0.0.1536.834" timestamp="1607308129267" />
+    <state x="420" y="164" width="1336" height="820" key="dock-window-1" timestamp="1607305626769">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="420" y="164" width="1336" height="820" key="dock-window-1/0.0.1536.834@0.0.1536.834" timestamp="1607305626769" />
+    <state x="387" y="135" width="1336" height="820" key="dock-window-2" timestamp="1607305626769">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="387" y="135" width="1336" height="820" key="dock-window-2/0.0.1536.834@0.0.1536.834" timestamp="1607305626769" />
+    <state x="0" y="0" width="1336" height="820" key="dock-window-3" timestamp="1607305626769">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="0" width="1336" height="820" key="dock-window-3/0.0.1536.834@0.0.1536.834" timestamp="1607305626769" />
     <state x="478" y="16" width="579" height="801" key="find.popup" timestamp="1606892111765">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="478" y="16" width="579" height="801" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1606892111765" />
+    <state x="410" y="144" width="700" height="530" key="recent.locations.popup" timestamp="1607305270255">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="410" y="144" width="700" height="530" key="recent.locations.popup/0.0.1536.834@0.0.1536.834" timestamp="1607305270255" />
   </component>
 </project>

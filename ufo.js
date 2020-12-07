@@ -5,12 +5,13 @@ class Ufo {
         this.y = 0;
         this.ufo = [];
         this.speed = 5;
+        this.distance = 400;
     }
     autoAdd (i) {
         if (this.ufo[i].x === Math.floor(window.innerWidth / 2)) {
             this.ufo.push({
                 x: window.innerWidth - 200,
-                y: Math.floor(Math.random() * (gameAreaHeight - ufo2.height - ufoDistance))
+                y: Math.floor(Math.random() * (gameAreaHeight - ufo2.height - this.distance))
             })
         }
 

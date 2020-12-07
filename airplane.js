@@ -9,10 +9,10 @@ class YourAirplane {
         this.y-=100;
     }
     checkLose (i,ufo) {
-        if (Math.floor(demoPlane.x)===Math.floor(ufo[i].x)&&Math.floor(demoPlane.y)<Math.floor(ufo[i].y + ufo1.height)
-            ||Math.floor(demoPlane.x)+1===Math.floor(ufo[i].x)&&Math.floor(demoPlane.y)<Math.floor(ufo[i].y+ ufo1.height)
+        if (Math.floor(demoPlane.x)===Math.floor(ufo.ufo[i].x)&&Math.floor(demoPlane.y)<Math.floor(ufo.ufo[i].y + ufo1.height)
+            ||Math.floor(demoPlane.x)+1===Math.floor(ufo.ufo[i].x)&&Math.floor(demoPlane.y)<Math.floor(ufo.ufo[i].y+ ufo1.height)
             // do su chenh lech size cua anh that va kick thuoc anh trong game;
-            ||Math.floor(demoPlane.x) +1 ===Math.floor(ufo[i].x)&&Math.floor(demoPlane.y)>Math.floor(ufo[i].y+ ufo1.height-300) + ufoDistance) {
+            ||Math.floor(demoPlane.x) +1 ===Math.floor(ufo.ufo[i].x)&&Math.floor(demoPlane.y)>Math.floor(ufo.ufo[i].y+ ufo1.height-300) + ufo.distance) {
             return false;
         }
     }
